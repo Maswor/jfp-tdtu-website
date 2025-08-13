@@ -1,0 +1,33 @@
+# Hugo build output
+/public/
+/resources/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Node modules
+node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Backup files
+*~
+*.swp
+
+# Binary files (images, pdfs, etc.)
+# Keep images in static/img/ and version them as needed
+# If you want to ignore large or temporary binaries, add patterns below:
+# *.psd
+# *.ai
+# *.pdf
+# *.zip
+# *.tar.gz
+
+# Ignore Hugo cache
+hugo_cache/
