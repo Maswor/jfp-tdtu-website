@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Papers - Journal of Faculty of Pharmacy, Ton Duc Thang University</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Papers</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/papers/">Papers</a>
+        <a href="/about/">About</a>
+    </nav>
+    <div class="container">
+        {{ if .Pages }}
+            {{ range .Pages }}
+            <div class="paper-card">
+                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                <p><strong>Authors:</strong> {{ with .Params.author }}{{ delimit . ", " }}{{ end }}</p>
+                <p><strong>Date:</strong> {{ .Date.Format "2006-01-02" }}</p>
+                {{ with .Params.abstract }}<p><em>{{ . }}</em></p>{{ end }}
+                <a class="button" href="{{ .RelPermalink }}">Read Full Paper</a>
+            </div>
+            {{ end }}
+        {{ else }}
+            <p>No papers found.</p>
+        {{ end }}
+    </div>
+    <footer>
+        &copy; 2025 Journal of Faculty of Pharmacy, Ton Duc Thang University
+    </footer>
+</body>
+</html>

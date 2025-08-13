@@ -1,0 +1,30 @@
+title = "Journal of Faculty of Pharmacy, Ton Duc Thang University"
+baseURL = "https://maswor.github.io/jfp-tdtu-website/"
+languageCode = "en"
+theme = "jfp-theme"
+
+[params]
+    description = "A journal dedicated to the field of pharmacy."
+    author = "Faculty of Pharmacy, Ton Duc Thang University"
+    keywords = ["pharmacy", "research", "journal", "Ton Duc Thang University"]
+
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+
+    [[menu.main]]
+        name = "Papers"
+        url = "/papers/"
+        weight = 2
+
+    [[menu.main]]
+        name = "About"
+        url = "/about/"
+        weight = 3
+
+[output]
+    home = ["HTML", "RSS", "JSON"]
+    section = ["HTML", "RSS", "JSON"]
+    taxonomy = ["HTML", "RSS", "JSON"]

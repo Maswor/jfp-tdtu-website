@@ -1,0 +1,6 @@
+<svg width="300" height="180" viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="280" height="160" rx="18" fill="#e3f2fd" stroke="#1976d2" stroke-width="3"/>
+  <text x="150" y="60" text-anchor="middle" font-size="24" fill="#1976d2" font-family="Segoe UI, Arial, sans-serif">Sample Figure</text>
+  <circle cx="150" cy="110" r="40" fill="#90caf9" stroke="#1976d2" stroke-width="3"/>
+  <text x="150" y="118" text-anchor="middle" font-size="18" fill="#1976d2" font-family="Segoe UI, Arial, sans-serif">SVG</text>
+</svg>
