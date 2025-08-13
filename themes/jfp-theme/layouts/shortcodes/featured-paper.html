@@ -1,0 +1,28 @@
+
+<table class="announcements">
+    <tr class="title">
+        <td colspan="3">
+            <h2>Featured Research Paper</h2>
+            <h3>{{ .Page.Params.featured_paper.post_title }}</h3>
+            <hr>
+        </td>
+    </tr>
+    <tr class="description">
+        <td colspan="2">
+            <p><strong>Title:</strong> {{ .Page.Params.featured_paper.title }}</p>
+            <p><strong>Authors:</strong> {{ .Page.Params.featured_paper.authors }}</p>
+            <p><strong>Abstract:</strong> {{ .Page.Params.featured_paper.abstract }}</p>
+            <p><strong>Keywords:</strong> {{ .Page.Params.featured_paper.keywords }}</p>
+            <p><strong>Introduction:</strong> {{ .Page.Params.featured_paper.introduction }}</p>
+            <p><strong>Conclusion:</strong> {{ .Page.Params.featured_paper.conclusion }}</p>
+        </td>
+        <td style="text-align:center;">
+            <img src="{{ .Page.Params.featured_paper.award_image }}" alt="Award Certificate" width="149" height="230">
+            <p style="text-align:center;"><a href="#" target="_blank">Award Certificate</a></p>
+        </td>
+    </tr>
+    <tr class="details">
+        <td style="text-align:left;"><a href="#" target="_blank">Click here to download flyer and share to friends</a></td>
+        <td class="more" colspan="2"><a href="#">More...</a></td>
+    </tr>
+</table>

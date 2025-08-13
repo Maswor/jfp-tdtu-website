@@ -3,6 +3,11 @@ baseURL = "https://maswor.github.io/jfp-tdtu-website/"
 languageCode = "en"
 theme = "jfp-theme"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
     description = "A journal dedicated to the field of pharmacy."
     author = "Faculty of Pharmacy, Ton Duc Thang University"
